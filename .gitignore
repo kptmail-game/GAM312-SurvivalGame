@@ -1,0 +1,47 @@
+# Unreal Engine 5 .gitignore
+# Copy to the root of the UE project as ".gitignore" (with the leading dot).
+
+# Generated and build output -- never commit these, they are rebuilt from source.
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+!Build/*/
+Build/*/**
+!Build/*.cs
+
+# Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.xcodeproj
+*.xcworkspace
+
+# Compiled binaries
+*.obj
+*.pdb
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+
+# Plugin build output (keep plugin source)
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local config that should not be shared
+Config/*Local*.ini
